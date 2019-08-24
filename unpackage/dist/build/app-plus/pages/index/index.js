@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"_p.",[1],"data-v-4b5e310b { color: #fff; }\n.",[1],"banner.",[1],"data-v-4b5e310b { width: ",[0,690],"; }\n.",[1],"banner .",[1],"_img.",[1],"data-v-4b5e310b { width: 100%; }\n",],undefined,{path:"./pages/index/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

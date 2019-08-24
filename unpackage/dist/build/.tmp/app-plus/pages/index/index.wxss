@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+._p.data-v-4b5e310b {
+  color: #fff;
+}
+.banner.data-v-4b5e310b {
+  width: 690rpx;
+}
+.banner ._img.data-v-4b5e310b {
+    width: 100%;
+}
+

@@ -4,21 +4,26 @@
 			<view class="left-title">{{title}}</view>
 			<view class="left-subtitle">{{subTitle}}</view>
 		</view>
-		<view class="center-box">
+		<view class="center-box" v-show="layout == 'center'">
 			<text
-				v-show="layout == 'center'"
 				class="nav-bar-title" 
 				:style="{color:textColor}"
 			>
 				{{title}}
 			</text>
 		</view>
+		<view class="search-bar-box" v-show="layout=='search'">
+			<div class="search-input-box">
+				<input type="text" class="search-input" placeholder="请输入商品信息" disabled>
+				<image src="../../static/icons/input-search.png" class="input-icon" />
+			</div>
+		</view>
 		<view
 			:class="['back-btn','icon-box',buttons && buttons.back && buttons.back.type=='circle'?'circle':'']" 
 			v-show="buttons && buttons.back"
 			:style="{backgroundColor:buttons && buttons.back && buttons.back.type=='circle'?'rgba(0,0,0,'+(backOpacity-priviteOpacity)+')':'transparent'}"
 		>
-			<img class="icon-img" src="../../static/icons/back.png" alt="">
+			<image class="icon-img" src="../../static/icons/back.png" />
 		</view>
 		<view class="right-btn-list">
 			<view 
@@ -26,28 +31,28 @@
 				v-show="buttons && buttons.love"
 				:style="{backgroundColor:buttons && buttons.love && buttons.love.type=='circle'?'rgba(0,0,0,'+(backOpacity-priviteOpacity)+')':'transparent'}"
 			>
-				<img class="icon-img" src="../../static/icons/love.png" alt="">
+				<image class="icon-img" src="../../static/icons/love.png" />
 			</view>
 			<view 
 				:class="['icon-box',buttons && buttons.share && buttons.share.type=='circle'?'circle':'']" 
 				v-show="buttons && buttons.share"
 				:style="{backgroundColor:buttons && buttons.share && buttons.share.type=='circle'?'rgba(0,0,0,'+(backOpacity-priviteOpacity)+')':'transparent'}"
 			>
-				<img class="icon-img" src="../../static/icons/share.png" alt="">
+				<image class="icon-img" src="../../static/icons/share.png" />
 			</view>
 			<view 
 				:class="['icon-box',buttons && buttons.cart && buttons.cart.type=='circle'?'circle':'']" 
 				v-show="buttons && buttons.cart"
 				:style="{backgroundColor:buttons && buttons.cart && buttons.cart.type=='circle'?'rgba(0,0,0,'+(backOpacity-priviteOpacity)+')':'transparent'}"
 			>
-				<img class="icon-img" src="../../static/icons/cart.png" alt="">
+				<image class="icon-img" src="../../static/icons/cart.png" />
 			</view>
 			<view
 				:class="['icon-box',buttons && buttons.search && buttons.search.type=='circle'?'circle':'']" 
 				v-show="buttons && buttons.search"
 				:style="{backgroundColor:buttons && buttons.search && buttons.search.type=='circle'?'rgba(0,0,0,'+(backOpacity-priviteOpacity)+')':'transparent'}"
 			>
-				<img class="icon-img" src="../../static/icons/search.png" alt="">
+				<image class="icon-img" src="../../static/icons/search.png" />
 			</view>
 			<view
 				class="icon-text-box" 
@@ -124,7 +129,7 @@
 		.right-btn-list{
 			position:absolute;
 			bottom:4px;
-			right:24upx;
+			right:30upx;
 			display:flex;
 			justify-content:flex-end;
 			align-items:center;
@@ -160,6 +165,40 @@
 		}
 		.center-box{
 			
+		}
+		.search-bar-box{
+			width:100%;
+			padding:2px 30upx;
+			display:flex;
+			justify-content:space-between;
+			.search-input-box{
+				position:relative;
+				width:596upx;
+				height:40px;
+				.search-input{
+					width:100%;
+					height:100%;
+					padding:0px 30upx;
+					background: #15030B;
+					color:#fff;
+					opacity: 0.3;
+					font-size: 15px;
+					padding-right:80upx;
+				}
+				.input-icon{
+					position: absolute;
+					width:30px;
+					height:30px;
+					top:5px;
+					right:5px;
+				}
+			}
+			.leave-search{
+				color:#fff;
+				font-size: 16px;
+				width:100upx;
+				line-height: 40px;
+			}
 		}
 		.icon-box{
 			width:36px;

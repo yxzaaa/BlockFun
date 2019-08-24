@@ -449,8 +449,8 @@
 		color: #999999;
 	}
 	.app-container{
-		padding:30upx;
-		padding-top:calc(72px + 30upx);
+		/* padding:30upx;
+		padding-top:calc(72px + 30upx); */
 	}
 	
 	/* page{

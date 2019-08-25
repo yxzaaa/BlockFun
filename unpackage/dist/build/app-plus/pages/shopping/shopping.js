@@ -1,2 +1,0 @@
-setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"_p.",[1],"data-v-33ace1c0 { color: #fff; }\n",],undefined,{path:"./pages/shopping/shopping.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/shopping/shopping.wxml') } }));

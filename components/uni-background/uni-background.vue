@@ -18,7 +18,7 @@
 	.fixed-container{
 		position: fixed;
 		width:750upx;
-		height:100vh;
+		height:calc(100vh - 50px);
 		top:0;
 		left:0;
 		background-image:url(../../static/bg.jpg);

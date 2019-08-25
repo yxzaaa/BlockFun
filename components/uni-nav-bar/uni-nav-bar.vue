@@ -76,7 +76,7 @@
 				type:String,
 				default:'Unblockgrace'
 			},
-			textColor:{
+			textColor:{ 
 				type:String,
 				default:'#000000'
 			},
@@ -129,7 +129,7 @@
 		.right-btn-list{
 			position:absolute;
 			bottom:4px;
-			right:30upx;
+			right:40upx;
 			display:flex;
 			justify-content:flex-end;
 			align-items:center;
@@ -151,7 +151,7 @@
 			overflow: hidden;
 		}
 		.left-box{
-			padding:0upx 30upx;
+			padding:0upx 40upx;
 			.left-title{
 				color:#fff;
 				font-size: 18px;
@@ -168,7 +168,7 @@
 		}
 		.search-bar-box{
 			width:100%;
-			padding:2px 30upx;
+			padding:2px 40upx;
 			display:flex;
 			justify-content:space-between;
 			.search-input-box{
